@@ -1,0 +1,67 @@
+symbol,label,group,fold,family,chosen,in_sample,out_of_sample,oos_gap,baseline_is,baseline_oos,beat_baseline_oos,train,test
+GLD,Gold (ETF),commodity,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.346,0.099,1.247,0.757,-0.089,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+GLD,Gold (ETF),commodity,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.686,-0.081,0.767,0.757,-0.089,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+GLD,Gold (ETF),commodity,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.099,1.956,-1.857,-0.089,0.777,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+GLD,Gold (ETF),commodity,1,harvester,"harvester[window=252,max_range_ratio=1.0]",-0.062,0.645,-0.706,-0.089,0.777,False,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+GLD,Gold (ETF),commodity,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.956,1.892,0.064,0.777,0.835,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+GLD,Gold (ETF),commodity,2,harvester,"harvester[window=252,max_range_ratio=1.25]",1.089,0.655,0.434,0.777,0.835,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+CPER,Copper (ETF),commodity,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",-0.012,0.859,-0.87,-0.191,0.336,True,2011-11-18..2015-08-07,2015-08-14..2019-05-03
+CPER,Copper (ETF),commodity,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.239,0.643,-0.882,-0.191,0.336,True,2011-11-18..2015-08-07,2015-08-14..2019-05-03
+CPER,Copper (ETF),commodity,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.859,0.928,-0.069,0.336,0.464,True,2015-08-14..2019-05-03,2019-05-10..2023-01-27
+CPER,Copper (ETF),commodity,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.643,0.464,0.179,0.336,0.464,False,2015-08-14..2019-05-03,2019-05-10..2023-01-27
+CPER,Copper (ETF),commodity,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.928,1.322,-0.394,0.464,0.768,True,2019-05-10..2023-01-27,2023-02-03..2026-10-30
+CPER,Copper (ETF),commodity,2,harvester,"harvester[window=252,max_range_ratio=1.25]",0.862,0.926,-0.064,0.464,0.768,True,2019-05-10..2023-01-27,2023-02-03..2026-10-30
+USO,WTI oil (ETF),commodity,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",-0.01,-0.156,0.146,-0.089,-0.197,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+USO,WTI oil (ETF),commodity,0,harvester,"harvester[window=252,max_range_ratio=1.25]",-0.078,-0.239,0.161,-0.089,-0.197,False,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+USO,WTI oil (ETF),commodity,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.155,0.185,-0.341,-0.197,0.057,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+USO,WTI oil (ETF),commodity,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.197,-0.021,-0.176,-0.197,0.057,False,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+USO,WTI oil (ETF),commodity,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.19,1.247,-1.057,0.057,0.806,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+USO,WTI oil (ETF),commodity,2,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.021,0.755,-0.776,0.057,0.806,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0883.HK,CNOOC,soe,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.336,0.111,0.225,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0883.HK,CNOOC,soe,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.17,-0.014,0.184,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0883.HK,CNOOC,soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.111,0.731,-0.621,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0883.HK,CNOOC,soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.014,0.47,-0.484,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0883.HK,CNOOC,soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.731,2.091,-1.36,0.3,1.325,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0883.HK,CNOOC,soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.47,1.325,-0.855,0.3,1.325,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0939.HK,China Construction Bank,soe,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.256,0.763,-0.507,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0939.HK,China Construction Bank,soe,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.156,0.422,-0.266,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0939.HK,China Construction Bank,soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.824,1.061,-0.237,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0939.HK,China Construction Bank,soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.422,0.408,0.013,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0939.HK,China Construction Bank,soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.061,1.393,-0.332,0.37,1.209,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0939.HK,China Construction Bank,soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.408,1.011,-0.602,0.37,1.209,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+BBRI.JK,Bank Rakyat Indonesia,idx,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",0.366,1.149,-0.783,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
+BBRI.JK,Bank Rakyat Indonesia,idx,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.281,0.911,-0.63,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
+BBRI.JK,Bank Rakyat Indonesia,idx,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.383,0.796,0.587,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
+BBRI.JK,Bank Rakyat Indonesia,idx,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.911,0.426,0.485,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
+BBRI.JK,Bank Rakyat Indonesia,idx,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.796,0.54,0.256,0.391,0.075,True,2017-06-09..2022-02-04,2022-02-11..2026-10-30
+BBRI.JK,Bank Rakyat Indonesia,idx,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.426,0.057,0.369,0.391,0.075,False,2017-06-09..2022-02-04,2022-02-11..2026-10-30
+BTC-USD,Bitcoin,crypto,0,grid,"grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]",1.211,0.904,0.307,2.226,0.621,True,2014-09-19..2017-09-22,2017-09-29..2020-10-09
+BTC-USD,Bitcoin,crypto,0,harvester,"harvester[window=252,max_range_ratio=0.85]",2.11,0.671,1.439,2.226,0.621,True,2014-09-19..2017-09-22,2017-09-29..2020-10-09
+BTC-USD,Bitcoin,crypto,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.553,3.507,-1.954,0.621,0.606,True,2017-09-29..2020-10-09,2020-10-16..2023-10-20
+BTC-USD,Bitcoin,crypto,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.671,0.644,0.027,0.621,0.606,True,2017-09-29..2020-10-09,2020-10-16..2023-10-20
+BTC-USD,Bitcoin,crypto,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",3.507,3.724,-0.217,0.606,0.7,True,2020-10-16..2023-10-20,2023-10-27..2026-11-06
+BTC-USD,Bitcoin,crypto,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.644,0.785,-0.141,0.606,0.7,True,2020-10-16..2023-10-20,2023-10-27..2026-11-06
+SOL-USD,Solana,crypto,0,grid,"grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]",4.359,-0.674,5.033,15.337,-0.485,False,2020-04-10..2021-11-26,2021-12-03..2023-07-21
+SOL-USD,Solana,crypto,0,harvester,"harvester[window=252,max_range_ratio=0.85]",15.337,-0.485,15.822,15.337,-0.485,False,2020-04-10..2021-11-26,2021-12-03..2023-07-21
+SOL-USD,Solana,crypto,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.566,3.534,-4.1,-0.485,3.434,True,2021-12-03..2023-07-21,2023-07-28..2025-03-14
+SOL-USD,Solana,crypto,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.485,3.434,-3.919,-0.485,3.434,False,2021-12-03..2023-07-21,2023-07-28..2025-03-14
+SOL-USD,Solana,crypto,2,grid,"grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]",4.865,0.052,4.813,3.434,-0.014,True,2023-07-28..2025-03-14,2025-03-21..2026-11-06
+SOL-USD,Solana,crypto,2,harvester,"harvester[window=252,max_range_ratio=0.85]",3.434,-0.014,3.448,3.434,-0.014,False,2023-07-28..2025-03-14,2025-03-21..2026-11-06
+RAY-USD,Raydium,crypto,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",-0.548,1.347,-1.896,-0.531,0.829,True,2021-02-26..2022-07-22,2022-07-29..2023-12-29
+RAY-USD,Raydium,crypto,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.531,0.829,-1.36,-0.531,0.829,False,2021-02-26..2022-07-22,2022-07-29..2023-12-29
+RAY-USD,Raydium,crypto,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",1.356,3.398,-2.042,0.829,0.975,True,2022-07-29..2023-12-29,2024-01-05..2025-05-30
+RAY-USD,Raydium,crypto,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.829,0.975,-0.146,0.829,0.975,False,2022-07-29..2023-12-29,2024-01-05..2025-05-30
+RAY-USD,Raydium,crypto,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",3.675,0.592,3.083,0.975,0.142,True,2024-01-05..2025-05-30,2025-06-06..2026-11-06
+RAY-USD,Raydium,crypto,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.975,0.142,0.833,0.975,0.142,False,2024-01-05..2025-05-30,2025-06-06..2026-11-06
+2382.HK,Sunny Optical,high_bounce,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.207,2.71,-2.503,0.197,1.642,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+2382.HK,Sunny Optical,high_bounce,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.234,1.415,-1.182,0.197,1.642,False,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+2382.HK,Sunny Optical,high_bounce,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.71,1.272,1.438,1.642,0.533,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+2382.HK,Sunny Optical,high_bounce,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.449,0.551,0.898,1.642,0.533,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+2382.HK,Sunny Optical,high_bounce,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.272,-0.003,1.275,0.533,-0.113,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+2382.HK,Sunny Optical,high_bounce,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.551,-0.094,0.645,0.533,-0.113,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+6862.HK,Haidilao,high_bounce,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",5.747,-0.283,6.03,3.236,-0.375,True,2018-09-28..2020-09-25,2020-10-02..2022-10-07
+6862.HK,Haidilao,high_bounce,0,harvester,"harvester[window=252,max_range_ratio=0.85]",3.236,-0.375,3.611,3.236,-0.375,False,2018-09-28..2020-09-25,2020-10-02..2022-10-07
+6862.HK,Haidilao,high_bounce,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.283,1.238,-1.521,-0.375,0.427,True,2020-10-02..2022-10-07,2022-10-14..2024-10-18
+6862.HK,Haidilao,high_bounce,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.375,0.427,-0.802,-0.375,0.427,False,2020-10-02..2022-10-07,2022-10-14..2024-10-18
+6862.HK,Haidilao,high_bounce,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.254,-0.06,1.313,0.427,-0.268,True,2022-10-14..2024-10-18,2024-10-25..2026-10-30
+6862.HK,Haidilao,high_bounce,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.427,-0.268,0.695,0.427,-0.268,False,2022-10-14..2024-10-18,2024-10-25..2026-10-30

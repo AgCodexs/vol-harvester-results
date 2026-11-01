@@ -1,0 +1,12 @@
+symbol,label,group,rows,first,last,years,vol,in_band,bounce_rate,bounce_episodes,trips_per_yr,total_return,max_dd,note
+GLD,Gold (ETF),commodity,4738,2008-01-02,2026-10-30,18.8,0.183,False,0.5,4,9.6,3.19,-0.456,no cost-curve anchor
+CPER,Copper (ETF),commodity,3761,2011-11-15,2026-10-30,14.9,0.309,True,0.8,5,13.7,0.55,-0.578,90th-pct production cost = real anchor
+USO,WTI oil (ETF),commodity,4738,2008-01-02,2026-10-30,18.8,0.384,True,0.0,1,30.5,-0.73,-0.982,contango drag; ETF != spot
+0883.HK,CNOOC,soe,4642,2008-01-02,2026-10-30,18.4,0.374,True,0.33,6,29.3,4.61,-0.728,high yield -- run adj AND raw
+0939.HK,China Construction Bank,soe,4642,2008-01-02,2026-10-30,18.4,0.288,True,0.67,6,18.6,3.55,-0.634,decade-long range on low multiple
+BBRI.JK,Bank Rakyat Indonesia,idx,4618,2008-01-02,2026-10-30,18.3,0.374,True,0.89,9,28.2,7.64,-0.663,your real universe
+BTC-USD,Bitcoin,crypto,4429,2014-09-17,2026-11-01,17.6,0.551,True,0.81,16,43.2,169.4,-0.834,"trending, no anchor"
+SOL-USD,Solana,crypto,2397,2020-04-10,2026-11-01,9.5,0.967,False,0.78,9,88.7,98.67,-0.963,crashed 95% and recovered
+RAY-USD,Raydium,crypto,2080,2021-02-21,2026-11-01,8.3,1.095,False,0.67,3,99.5,-0.78,-0.992,the did-it-come-back test
+2382.HK,Sunny Optical,high_bounce,4642,2008-01-02,2026-10-30,18.4,0.529,True,0.77,13,47.6,26.76,-0.861,selected for bounce rate
+6862.HK,Haidilao,high_bounce,1991,2018-09-26,2026-10-30,7.9,0.521,True,0.5,2,47.2,-0.35,-0.879,selected for bounce rate

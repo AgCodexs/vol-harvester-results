@@ -1,0 +1,323 @@
+
+FETCH
+  GLD          4738 rows  2008-01-02 -> 2026-10-30
+  CPER         3761 rows  2011-11-15 -> 2026-10-30
+  USO          4738 rows  2008-01-02 -> 2026-10-30
+  0883.HK      4642 rows  2008-01-02 -> 2026-10-30
+  0939.HK      4642 rows  2008-01-02 -> 2026-10-30
+  BBRI.JK      4618 rows  2008-01-02 -> 2026-10-30
+  BTC-USD      4429 rows  2014-09-17 -> 2026-11-01
+  SOL-USD      2397 rows  2020-04-10 -> 2026-11-01
+  RAY-USD      2080 rows  2021-02-21 -> 2026-11-01
+  2382.HK      4642 rows  2008-01-02 -> 2026-10-30
+  6862.HK      1991 rows  2018-09-26 -> 2026-10-30
+
+INVENTORY  (vol band from the constitution is 25-65%)
+ symbol                   label       group  rows      first       last  years   vol  in_band  bounce_rate  bounce_episodes  trips_per_yr  total_return  max_dd                                   note
+    GLD              Gold (ETF)   commodity  4738 2008-01-02 2026-10-30   18.8 0.183    False         0.50                4           9.6          3.19  -0.456                   no cost-curve anchor
+   CPER            Copper (ETF)   commodity  3761 2011-11-15 2026-10-30   14.9 0.309     True         0.80                5          13.7          0.55  -0.578 90th-pct production cost = real anchor
+    USO           WTI oil (ETF)   commodity  4738 2008-01-02 2026-10-30   18.8 0.384     True         0.00                1          30.5         -0.73  -0.982             contango drag; ETF != spot
+0883.HK                   CNOOC         soe  4642 2008-01-02 2026-10-30   18.4 0.374     True         0.33                6          29.3          4.61  -0.728          high yield -- run adj AND raw
+0939.HK China Construction Bank         soe  4642 2008-01-02 2026-10-30   18.4 0.288     True         0.67                6          18.6          3.55  -0.634      decade-long range on low multiple
+BBRI.JK   Bank Rakyat Indonesia         idx  4618 2008-01-02 2026-10-30   18.3 0.374     True         0.89                9          28.2          7.64  -0.663                     your real universe
+BTC-USD                 Bitcoin      crypto  4429 2014-09-17 2026-11-01   17.6 0.551     True         0.81               16          43.2        169.40  -0.834                    trending, no anchor
+SOL-USD                  Solana      crypto  2397 2020-04-10 2026-11-01    9.5 0.967    False         0.78                9          88.7         98.67  -0.963              crashed 95% and recovered
+RAY-USD                 Raydium      crypto  2080 2021-02-21 2026-11-01    8.3 1.095    False         0.67                3          99.5         -0.78  -0.992              the did-it-come-back test
+2382.HK           Sunny Optical high_bounce  4642 2008-01-02 2026-10-30   18.4 0.529     True         0.77               13          47.6         26.76  -0.861               selected for bounce rate
+6862.HK                Haidilao high_bounce  1991 2018-09-26 2026-10-30    7.9 0.521     True         0.50                2          47.2         -0.35  -0.879               selected for bounce rate
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/inventory.csv  (11 rows)
+
+SWEEP  bars=weekly series=adj costs=retail cash=4.0%
+  GLD          983 bars  sweeping...
+  CPER         781 bars  sweeping...
+  USO          983 bars  sweeping...
+  0883.HK      983 bars  sweeping...
+  0939.HK      983 bars  sweeping...
+  BBRI.JK      975 bars  sweeping...
+  BTC-USD      634 bars  sweeping...
+  SOL-USD      344 bars  sweeping...
+  RAY-USD      298 bars  sweeping...
+  2382.HK      983 bars  sweeping...
+  6862.HK      423 bars  sweeping...
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/sweep_raw.csv  (363 rows)
+
+STABILITY  per asset x family. Read win_rate, not best.
+ symbol       group    family  cells  baseline  median  worst  spread  win_rate   best
+    GLD   commodity   buyhold      1     0.361   0.179  0.179   0.000      0.00  0.179
+    GLD   commodity rebalance      1     0.361   0.361  0.361   0.000      0.00  0.361
+    GLD   commodity      grid     24     0.361   0.530  0.347   0.605      0.92  0.952
+    GLD   commodity harvester      6     0.361   0.282  0.169   0.305      0.33  0.475
+    GLD   commodity   blend50      1     0.361   0.474  0.474   0.000      1.00  0.474
+   CPER   commodity   buyhold      1     0.168   0.065  0.065   0.000      0.00  0.065
+   CPER   commodity rebalance      1     0.168   0.168  0.168   0.000      0.00  0.168
+   CPER   commodity      grid     24     0.168   0.201  0.131   0.237      0.67  0.368
+   CPER   commodity harvester      6     0.168   0.108  0.086   0.031      0.00  0.116
+   CPER   commodity   blend50      1     0.168   0.131  0.131   0.000      0.00  0.131
+    USO   commodity   buyhold      1     0.002  -0.054 -0.054   0.000      0.00 -0.054
+    USO   commodity rebalance      1     0.002   0.002  0.002   0.000      0.00  0.002
+    USO   commodity      grid     24     0.002  -0.020 -0.036   0.054      0.08  0.018
+    USO   commodity harvester      6     0.002  -0.031 -0.033   0.038      0.17  0.005
+    USO   commodity   blend50      1     0.002  -0.030 -0.030   0.000      0.00 -0.030
+0883.HK         soe   buyhold      1     0.208   0.146  0.146   0.000      0.00  0.146
+0883.HK         soe rebalance      1     0.208   0.208  0.208   0.000      0.00  0.208
+0883.HK         soe      grid     24     0.208   0.192  0.167   0.065      0.21  0.232
+0883.HK         soe harvester      6     0.208   0.217  0.192   0.041      0.83  0.232
+0883.HK         soe   blend50      1     0.208   0.205  0.205   0.000      0.00  0.205
+0939.HK         soe   buyhold      1     0.210   0.150  0.150   0.000      0.00  0.150
+0939.HK         soe rebalance      1     0.210   0.210  0.210   0.000      0.00  0.210
+0939.HK         soe      grid     24     0.210   0.202  0.170   0.083      0.33  0.253
+0939.HK         soe harvester      6     0.210   0.201  0.185   0.036      0.33  0.222
+0939.HK         soe   blend50      1     0.210   0.182  0.182   0.000      0.00  0.182
+BBRI.JK         idx   buyhold      1     0.239   0.188  0.188   0.000      0.00  0.188
+BBRI.JK         idx rebalance      1     0.239   0.239  0.239   0.000      0.00  0.239
+BBRI.JK         idx      grid     24     0.239   0.195  0.170   0.060      0.00  0.230
+BBRI.JK         idx harvester      6     0.239   0.213  0.166   0.057      0.00  0.223
+BBRI.JK         idx   blend50      1     0.239   0.190  0.190   0.000      0.00  0.190
+BTC-USD      crypto   buyhold      1     0.681   0.657  0.657   0.000      0.00  0.657
+BTC-USD      crypto rebalance      1     0.681   0.681  0.681   0.000      0.00  0.681
+BTC-USD      crypto      grid     24     0.681   0.383  0.332   0.155      0.00  0.487
+BTC-USD      crypto harvester      6     0.681   0.602  0.403   0.265      0.00  0.669
+BTC-USD      crypto   blend50      1     0.681   0.724  0.724   0.000      1.00  0.724
+SOL-USD      crypto   buyhold      1     0.950   1.032  1.032   0.000      1.00  1.032
+SOL-USD      crypto rebalance      1     0.950   0.950  0.950   0.000      0.00  0.950
+SOL-USD      crypto      grid     24     0.950   0.935  0.850   0.188      0.25  1.038
+SOL-USD      crypto harvester      6     0.950   0.929  0.810   0.158      0.33  0.968
+SOL-USD      crypto   blend50      1     0.950   1.003  1.003   0.000      1.00  1.003
+RAY-USD      crypto   buyhold      1     0.092  -0.206 -0.206   0.000      0.00 -0.206
+RAY-USD      crypto rebalance      1     0.092   0.092  0.092   0.000      0.00  0.092
+RAY-USD      crypto      grid     24     0.092   0.034 -0.045   0.173      0.17  0.128
+RAY-USD      crypto harvester      6     0.092   0.269  0.092   0.183      0.83  0.275
+RAY-USD      crypto   blend50      1     0.092   0.079  0.079   0.000      0.00  0.079
+2382.HK high_bounce   buyhold      1     0.268   0.221  0.221   0.000      0.00  0.221
+2382.HK high_bounce rebalance      1     0.268   0.268  0.268   0.000      0.00  0.268
+2382.HK high_bounce      grid     24     0.268   0.109  0.099   0.021      0.00  0.120
+2382.HK high_bounce harvester      6     0.268   0.221  0.185   0.069      0.00  0.254
+2382.HK high_bounce   blend50      1     0.268   0.173  0.173   0.000      0.00  0.173
+6862.HK high_bounce   buyhold      1     0.038  -0.054 -0.054   0.000      0.00 -0.054
+6862.HK high_bounce rebalance      1     0.038   0.038  0.038   0.000      0.00  0.038
+6862.HK high_bounce      grid     24     0.038   0.168  0.091   0.281      1.00  0.371
+6862.HK high_bounce harvester      6     0.038  -0.042 -0.044   0.049      0.00  0.005
+6862.HK high_bounce   blend50      1     0.038   0.031  0.031   0.000      0.00  0.031
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/stability.csv  (55 rows)
+
+BY GROUP  ~3 effective independent histories.
+  premise_holds=True is where the grid SHOULD win.
+  If it loses there, that is decisive. If it wins on crypto,
+  suspect a bug rather than a discovery.
+      group    family  assets  median  worst  win_rate  spread  premise_holds
+  commodity   blend50       3   0.131 -0.030     0.333   0.000           True
+  commodity   buyhold       3   0.065 -0.054     0.000   0.000           True
+  commodity      grid       3   0.201 -0.036     0.557   0.237           True
+  commodity harvester       3   0.108 -0.033     0.167   0.038           True
+  commodity rebalance       3   0.168  0.002     0.000   0.000           True
+     crypto   blend50       3   0.724  0.079     0.667   0.000          False
+     crypto   buyhold       3   0.657 -0.206     0.333   0.000          False
+     crypto      grid       3   0.383 -0.045     0.140   0.173          False
+     crypto harvester       3   0.602  0.092     0.387   0.183          False
+     crypto rebalance       3   0.681  0.092     0.000   0.000          False
+high_bounce   blend50       2   0.102  0.031     0.000   0.000          False
+high_bounce   buyhold       2   0.084 -0.054     0.000   0.000          False
+high_bounce      grid       2   0.138  0.091     0.500   0.151          False
+high_bounce harvester       2   0.090 -0.044     0.000   0.059          False
+high_bounce rebalance       2   0.153  0.038     0.000   0.000          False
+        idx   blend50       1   0.190  0.190     0.000   0.000           True
+        idx   buyhold       1   0.188  0.188     0.000   0.000           True
+        idx      grid       1   0.195  0.170     0.000   0.060           True
+        idx harvester       1   0.213  0.166     0.000   0.057           True
+        idx rebalance       1   0.239  0.239     0.000   0.000           True
+        soe   blend50       2   0.194  0.182     0.000   0.000           True
+        soe   buyhold       2   0.148  0.146     0.000   0.000           True
+        soe      grid       2   0.197  0.167     0.270   0.074           True
+        soe harvester       2   0.209  0.185     0.580   0.038           True
+        soe rebalance       2   0.209  0.208     0.000   0.000           True
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/by_group.csv  (25 rows)
+
+WALK-FORWARD  oos_gap = in-sample best minus what it actually delivered next
+ symbol                   label       group  fold    family                                                       chosen  in_sample  out_of_sample  oos_gap  baseline_is  baseline_oos  beat_baseline_oos                  train                   test
+    GLD              Gold (ETF)   commodity     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.346          0.099    1.247        0.757        -0.089               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+    GLD              Gold (ETF)   commodity     0 harvester                   harvester[window=252,max_range_ratio=0.85]      0.686         -0.081    0.767        0.757        -0.089               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+    GLD              Gold (ETF)   commodity     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.099          1.956   -1.857       -0.089         0.777               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+    GLD              Gold (ETF)   commodity     1 harvester                    harvester[window=252,max_range_ratio=1.0]     -0.062          0.645   -0.706       -0.089         0.777              False 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+    GLD              Gold (ETF)   commodity     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.956          1.892    0.064        0.777         0.835               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+    GLD              Gold (ETF)   commodity     2 harvester                   harvester[window=252,max_range_ratio=1.25]      1.089          0.655    0.434        0.777         0.835              False 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+   CPER            Copper (ETF)   commodity     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]     -0.012          0.859   -0.870       -0.191         0.336               True 2011-11-18..2015-08-07 2015-08-14..2019-05-03
+   CPER            Copper (ETF)   commodity     0 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.239          0.643   -0.882       -0.191         0.336               True 2011-11-18..2015-08-07 2015-08-14..2019-05-03
+   CPER            Copper (ETF)   commodity     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.859          0.928   -0.069        0.336         0.464               True 2015-08-14..2019-05-03 2019-05-10..2023-01-27
+   CPER            Copper (ETF)   commodity     1 harvester                   harvester[window=252,max_range_ratio=0.85]      0.643          0.464    0.179        0.336         0.464              False 2015-08-14..2019-05-03 2019-05-10..2023-01-27
+   CPER            Copper (ETF)   commodity     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.928          1.322   -0.394        0.464         0.768               True 2019-05-10..2023-01-27 2023-02-03..2026-10-30
+   CPER            Copper (ETF)   commodity     2 harvester                   harvester[window=252,max_range_ratio=1.25]      0.862          0.926   -0.064        0.464         0.768               True 2019-05-10..2023-01-27 2023-02-03..2026-10-30
+    USO           WTI oil (ETF)   commodity     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]     -0.010         -0.156    0.146       -0.089        -0.197               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+    USO           WTI oil (ETF)   commodity     0 harvester                   harvester[window=252,max_range_ratio=1.25]     -0.078         -0.239    0.161       -0.089        -0.197              False 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+    USO           WTI oil (ETF)   commodity     1      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]     -0.155          0.185   -0.341       -0.197         0.057               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+    USO           WTI oil (ETF)   commodity     1 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.197         -0.021   -0.176       -0.197         0.057              False 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+    USO           WTI oil (ETF)   commodity     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.190          1.247   -1.057        0.057         0.806               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+    USO           WTI oil (ETF)   commodity     2 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.021          0.755   -0.776        0.057         0.806              False 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+0883.HK                   CNOOC         soe     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.336          0.111    0.225        0.163        -0.025               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+0883.HK                   CNOOC         soe     0 harvester                    harvester[window=252,max_range_ratio=1.0]      0.170         -0.014    0.184        0.163        -0.025               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+0883.HK                   CNOOC         soe     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.111          0.731   -0.621       -0.025         0.300               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+0883.HK                   CNOOC         soe     1 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.014          0.470   -0.484       -0.025         0.300               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+0883.HK                   CNOOC         soe     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.731          2.091   -1.360        0.300         1.325               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+0883.HK                   CNOOC         soe     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.470          1.325   -0.855        0.300         1.325              False 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+0939.HK China Construction Bank         soe     0      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]      0.256          0.763   -0.507        0.115         0.337               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+0939.HK China Construction Bank         soe     0 harvester                   harvester[window=252,max_range_ratio=0.85]      0.156          0.422   -0.266        0.115         0.337               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+0939.HK China Construction Bank         soe     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.824          1.061   -0.237        0.337         0.370               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+0939.HK China Construction Bank         soe     1 harvester                   harvester[window=252,max_range_ratio=0.85]      0.422          0.408    0.013        0.337         0.370               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+0939.HK China Construction Bank         soe     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.061          1.393   -0.332        0.370         1.209               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+0939.HK China Construction Bank         soe     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.408          1.011   -0.602        0.370         1.209              False 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+BBRI.JK   Bank Rakyat Indonesia         idx     0      grid   grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]      0.366          1.149   -0.783        0.344         0.711               True 2008-01-04..2012-09-07 2012-09-14..2017-06-02
+BBRI.JK   Bank Rakyat Indonesia         idx     0 harvester                   harvester[window=252,max_range_ratio=0.85]      0.281          0.911   -0.630        0.344         0.711               True 2008-01-04..2012-09-07 2012-09-14..2017-06-02
+BBRI.JK   Bank Rakyat Indonesia         idx     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.383          0.796    0.587        0.711         0.391               True 2012-09-14..2017-06-02 2017-06-09..2022-02-04
+BBRI.JK   Bank Rakyat Indonesia         idx     1 harvester                   harvester[window=252,max_range_ratio=0.85]      0.911          0.426    0.485        0.711         0.391               True 2012-09-14..2017-06-02 2017-06-09..2022-02-04
+BBRI.JK   Bank Rakyat Indonesia         idx     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.796          0.540    0.256        0.391         0.075               True 2017-06-09..2022-02-04 2022-02-11..2026-10-30
+BBRI.JK   Bank Rakyat Indonesia         idx     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.426          0.057    0.369        0.391         0.075              False 2017-06-09..2022-02-04 2022-02-11..2026-10-30
+BTC-USD                 Bitcoin      crypto     0      grid   grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]      1.211          0.904    0.307        2.226         0.621               True 2014-09-19..2017-09-22 2017-09-29..2020-10-09
+BTC-USD                 Bitcoin      crypto     0 harvester                   harvester[window=252,max_range_ratio=0.85]      2.110          0.671    1.439        2.226         0.621               True 2014-09-19..2017-09-22 2017-09-29..2020-10-09
+BTC-USD                 Bitcoin      crypto     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.553          3.507   -1.954        0.621         0.606               True 2017-09-29..2020-10-09 2020-10-16..2023-10-20
+BTC-USD                 Bitcoin      crypto     1 harvester                   harvester[window=252,max_range_ratio=0.85]      0.671          0.644    0.027        0.621         0.606               True 2017-09-29..2020-10-09 2020-10-16..2023-10-20
+BTC-USD                 Bitcoin      crypto     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      3.507          3.724   -0.217        0.606         0.700               True 2020-10-16..2023-10-20 2023-10-27..2026-11-06
+BTC-USD                 Bitcoin      crypto     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.644          0.785   -0.141        0.606         0.700               True 2020-10-16..2023-10-20 2023-10-27..2026-11-06
+SOL-USD                  Solana      crypto     0      grid   grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]      4.359         -0.674    5.033       15.337        -0.485              False 2020-04-10..2021-11-26 2021-12-03..2023-07-21
+SOL-USD                  Solana      crypto     0 harvester                   harvester[window=252,max_range_ratio=0.85]     15.337         -0.485   15.822       15.337        -0.485              False 2020-04-10..2021-11-26 2021-12-03..2023-07-21
+SOL-USD                  Solana      crypto     1      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]     -0.566          3.534   -4.100       -0.485         3.434               True 2021-12-03..2023-07-21 2023-07-28..2025-03-14
+SOL-USD                  Solana      crypto     1 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.485          3.434   -3.919       -0.485         3.434              False 2021-12-03..2023-07-21 2023-07-28..2025-03-14
+SOL-USD                  Solana      crypto     2      grid   grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]      4.865          0.052    4.813        3.434        -0.014               True 2023-07-28..2025-03-14 2025-03-21..2026-11-06
+SOL-USD                  Solana      crypto     2 harvester                   harvester[window=252,max_range_ratio=0.85]      3.434         -0.014    3.448        3.434        -0.014              False 2023-07-28..2025-03-14 2025-03-21..2026-11-06
+RAY-USD                 Raydium      crypto     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]     -0.548          1.347   -1.896       -0.531         0.829               True 2021-02-26..2022-07-22 2022-07-29..2023-12-29
+RAY-USD                 Raydium      crypto     0 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.531          0.829   -1.360       -0.531         0.829              False 2021-02-26..2022-07-22 2022-07-29..2023-12-29
+RAY-USD                 Raydium      crypto     1      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]      1.356          3.398   -2.042        0.829         0.975               True 2022-07-29..2023-12-29 2024-01-05..2025-05-30
+RAY-USD                 Raydium      crypto     1 harvester                   harvester[window=252,max_range_ratio=0.85]      0.829          0.975   -0.146        0.829         0.975              False 2022-07-29..2023-12-29 2024-01-05..2025-05-30
+RAY-USD                 Raydium      crypto     2      grid   grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]      3.675          0.592    3.083        0.975         0.142               True 2024-01-05..2025-05-30 2025-06-06..2026-11-06
+RAY-USD                 Raydium      crypto     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.975          0.142    0.833        0.975         0.142              False 2024-01-05..2025-05-30 2025-06-06..2026-11-06
+2382.HK           Sunny Optical high_bounce     0      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      0.207          2.710   -2.503        0.197         1.642               True 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+2382.HK           Sunny Optical high_bounce     0 harvester                    harvester[window=252,max_range_ratio=1.0]      0.234          1.415   -1.182        0.197         1.642              False 2008-01-04..2012-09-07 2012-09-14..2017-05-26
+2382.HK           Sunny Optical high_bounce     1      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      2.710          1.272    1.438        1.642         0.533               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+2382.HK           Sunny Optical high_bounce     1 harvester                   harvester[window=252,max_range_ratio=0.85]      1.449          0.551    0.898        1.642         0.533               True 2012-09-14..2017-05-26 2017-06-02..2022-02-11
+2382.HK           Sunny Optical high_bounce     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.272         -0.003    1.275        0.533        -0.113               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+2382.HK           Sunny Optical high_bounce     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.551         -0.094    0.645        0.533        -0.113               True 2017-06-02..2022-02-11 2022-02-18..2026-10-30
+6862.HK                Haidilao high_bounce     0      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]      5.747         -0.283    6.030        3.236        -0.375               True 2018-09-28..2020-09-25 2020-10-02..2022-10-07
+6862.HK                Haidilao high_bounce     0 harvester                   harvester[window=252,max_range_ratio=0.85]      3.236         -0.375    3.611        3.236        -0.375              False 2018-09-28..2020-09-25 2020-10-02..2022-10-07
+6862.HK                Haidilao high_bounce     1      grid grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]     -0.283          1.238   -1.521       -0.375         0.427               True 2020-10-02..2022-10-07 2022-10-14..2024-10-18
+6862.HK                Haidilao high_bounce     1 harvester                   harvester[window=252,max_range_ratio=0.85]     -0.375          0.427   -0.802       -0.375         0.427              False 2020-10-02..2022-10-07 2022-10-14..2024-10-18
+6862.HK                Haidilao high_bounce     2      grid grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]      1.254         -0.060    1.313        0.427        -0.268               True 2022-10-14..2024-10-18 2024-10-25..2026-10-30
+6862.HK                Haidilao high_bounce     2 harvester                   harvester[window=252,max_range_ratio=0.85]      0.427         -0.268    0.695        0.427        -0.268              False 2022-10-14..2024-10-18 2024-10-25..2026-10-30
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/walkforward.csv  (66 rows)
+
+  summary by family:
+   family  folds  median_oos_gap  beat_baseline
+     grid     33          -0.237          0.970
+harvester     33           0.013          0.424
+
+COST SENSITIVITY  the grid trades far more than a rebalancer
+  GLD          983 bars  sweeping...
+  CPER         781 bars  sweeping...
+  USO          983 bars  sweeping...
+  0883.HK      983 bars  sweeping...
+  0939.HK      983 bars  sweeping...
+  BBRI.JK      975 bars  sweeping...
+  BTC-USD      634 bars  sweeping...
+  SOL-USD      344 bars  sweeping...
+  RAY-USD      298 bars  sweeping...
+  2382.HK      983 bars  sweeping...
+  6862.HK      423 bars  sweeping...
+  GLD          983 bars  sweeping...
+  CPER         781 bars  sweeping...
+  USO          983 bars  sweeping...
+  0883.HK      983 bars  sweeping...
+  0939.HK      983 bars  sweeping...
+  BBRI.JK      975 bars  sweeping...
+  BTC-USD      634 bars  sweeping...
+  SOL-USD      344 bars  sweeping...
+  RAY-USD      298 bars  sweeping...
+  2382.HK      983 bars  sweeping...
+  6862.HK      423 bars  sweeping...
+  GLD          983 bars  sweeping...
+  CPER         781 bars  sweeping...
+  USO          983 bars  sweeping...
+  0883.HK      983 bars  sweeping...
+  0939.HK      983 bars  sweeping...
+  BBRI.JK      975 bars  sweeping...
+  BTC-USD      634 bars  sweeping...
+  SOL-USD      344 bars  sweeping...
+  RAY-USD      298 bars  sweeping...
+  2382.HK      983 bars  sweeping...
+  6862.HK      423 bars  sweeping...
+  -> /Users/agus/.openclaw/workspace-harvester/repo-scaffold/results/cost_sensitivity.csv  (165 rows)
+   cost       group    family  median  win_rate
+  cheap   commodity   blend50   0.136     0.333
+  cheap   commodity   buyhold   0.065     0.000
+  cheap   commodity      grid   0.205     0.570
+  cheap   commodity harvester   0.112     0.167
+  cheap   commodity rebalance   0.169     0.000
+  cheap      crypto   blend50   0.730     0.667
+  cheap      crypto   buyhold   0.657     0.333
+  cheap      crypto      grid   0.386     0.183
+  cheap      crypto harvester   0.605     0.387
+  cheap      crypto rebalance   0.682     0.000
+  cheap high_bounce   blend50   0.104     0.000
+  cheap high_bounce   buyhold   0.084     0.000
+  cheap high_bounce      grid   0.142     0.500
+  cheap high_bounce harvester   0.092     0.000
+  cheap high_bounce rebalance   0.154     0.000
+  cheap         idx   blend50   0.192     0.000
+  cheap         idx   buyhold   0.188     0.000
+  cheap         idx      grid   0.198     0.000
+  cheap         idx harvester   0.218     0.000
+  cheap         idx rebalance   0.240     0.000
+  cheap         soe   blend50   0.198     0.500
+  cheap         soe   buyhold   0.148     0.000
+  cheap         soe      grid   0.200     0.290
+  cheap         soe harvester   0.216     0.580
+  cheap         soe rebalance   0.212     0.000
+painful   commodity   blend50   0.126     0.333
+painful   commodity   buyhold   0.064     0.000
+painful   commodity      grid   0.197     0.557
+painful   commodity harvester   0.103     0.167
+painful   commodity rebalance   0.167     0.000
+painful      crypto   blend50   0.719     0.667
+painful      crypto   buyhold   0.657     0.333
+painful      crypto      grid   0.379     0.140
+painful      crypto harvester   0.596     0.387
+painful      crypto rebalance   0.677     0.000
+painful high_bounce   blend50   0.099     0.000
+painful high_bounce   buyhold   0.083     0.000
+painful high_bounce      grid   0.132     0.500
+painful high_bounce harvester   0.087     0.000
+painful high_bounce rebalance   0.152     0.000
+painful         idx   blend50   0.188     0.000
+painful         idx   buyhold   0.188     0.000
+painful         idx      grid   0.194     0.000
+painful         idx harvester   0.207     0.000
+painful         idx rebalance   0.238     0.000
+painful         soe   blend50   0.189     0.000
+painful         soe   buyhold   0.148     0.000
+painful         soe      grid   0.194     0.250
+painful         soe harvester   0.200     0.335
+painful         soe rebalance   0.208     0.000
+ retail   commodity   blend50   0.131     0.333
+ retail   commodity   buyhold   0.065     0.000
+ retail   commodity      grid   0.201     0.557
+ retail   commodity harvester   0.108     0.167
+ retail   commodity rebalance   0.168     0.000
+ retail      crypto   blend50   0.724     0.667
+ retail      crypto   buyhold   0.657     0.333
+ retail      crypto      grid   0.383     0.140
+ retail      crypto harvester   0.602     0.387
+ retail      crypto rebalance   0.681     0.000
+ retail high_bounce   blend50   0.102     0.000
+ retail high_bounce   buyhold   0.084     0.000
+ retail high_bounce      grid   0.138     0.500
+ retail high_bounce harvester   0.090     0.000
+ retail high_bounce rebalance   0.153     0.000
+ retail         idx   blend50   0.190     0.000
+ retail         idx   buyhold   0.188     0.000
+ retail         idx      grid   0.195     0.000
+ retail         idx harvester   0.213     0.000
+ retail         idx rebalance   0.239     0.000
+ retail         soe   blend50   0.194     0.000
+ retail         soe   buyhold   0.148     0.000
+ retail         soe      grid   0.197     0.270
+ retail         soe harvester   0.209     0.580
+ retail         soe rebalance   0.209     0.000
+
+Done. Commit results/ and I can read it directly.
+
