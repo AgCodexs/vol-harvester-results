@@ -2,11 +2,29 @@ symbol,label,group,rows,first,last,years,vol,in_band,bounce_rate,bounce_episodes
 GLD,Gold (ETF),commodity,4738,2008-01-02,2026-10-30,18.8,0.183,False,0.5,4,9.6,3.19,-0.456,no cost-curve anchor
 CPER,Copper (ETF),commodity,3761,2011-11-15,2026-10-30,14.9,0.309,True,0.8,5,13.7,0.55,-0.578,90th-pct production cost = real anchor
 USO,WTI oil (ETF),commodity,4738,2008-01-02,2026-10-30,18.8,0.384,True,0.0,1,30.5,-0.73,-0.982,contango drag; ETF != spot
-0883.HK,CNOOC,soe,4642,2008-01-02,2026-10-30,18.4,0.374,True,0.33,6,29.3,4.61,-0.728,high yield -- run adj AND raw
-0939.HK,China Construction Bank,soe,4642,2008-01-02,2026-10-30,18.4,0.288,True,0.67,6,18.6,3.55,-0.634,decade-long range on low multiple
-BBRI.JK,Bank Rakyat Indonesia,idx,4618,2008-01-02,2026-10-30,18.3,0.374,True,0.89,9,28.2,7.64,-0.663,your real universe
 BTC-USD,Bitcoin,crypto,4429,2014-09-17,2026-11-01,17.6,0.551,True,0.81,16,43.2,169.4,-0.834,"trending, no anchor"
 SOL-USD,Solana,crypto,2397,2020-04-10,2026-11-01,9.5,0.967,False,0.78,9,88.7,98.67,-0.963,crashed 95% and recovered
 RAY-USD,Raydium,crypto,2080,2021-02-21,2026-11-01,8.3,1.095,False,0.67,3,99.5,-0.78,-0.992,the did-it-come-back test
-2382.HK,Sunny Optical,high_bounce,4642,2008-01-02,2026-10-30,18.4,0.529,True,0.77,13,47.6,26.76,-0.861,selected for bounce rate
-6862.HK,Haidilao,high_bounce,1991,2018-09-26,2026-10-30,7.9,0.521,True,0.5,2,47.2,-0.35,-0.879,selected for bounce rate
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,4618,2008-01-02,2026-10-30,18.3,0.374,True,0.89,9,28.2,7.64,-0.663,"Reduce/5%, NPL risk"
+BMRI.JK,Bank Mandiri,idx_bank,4619,2008-01-02,2026-11-02,18.3,0.367,True,0.75,8,26.1,8.31,-0.636,"Tier S, rotation target"
+BBCA.JK,Bank Central Asia,idx_bank,4619,2008-01-02,2026-11-02,18.3,0.298,True,0.86,7,18.4,9.11,-0.518,"cleanest vehicle, NPL 2.1%"
+LSIP.JK,London Sumatra,idx_other,4618,2008-01-02,2026-11-02,18.3,0.438,True,0.0,2,36.8,0.25,-0.892,"trapped cash, no catalyst"
+INCO.JK,Vale Indonesia,idx_other,4618,2008-01-02,2026-11-02,18.3,0.517,True,0.0,2,46.7,-0.52,-0.883,"commodity-sensitive, no moat"
+0939.HK,China Construction Bank,cn_soe,4642,2008-01-02,2026-10-30,18.4,0.288,True,0.67,6,18.6,3.55,-0.634,sell trigger 10-11x PE
+1398.HK,ICBC,cn_soe,4643,2008-01-02,2026-11-02,18.4,0.281,True,0.5,6,18.9,3.01,-0.543,sell trigger 10-11x PE
+0883.HK,CNOOC,cn_soe,4642,2008-01-02,2026-10-30,18.4,0.374,True,0.33,6,29.3,4.61,-0.728,fully exited; keep as test case
+9961.HK,Trip.com,hk_tech,1363,2021-04-19,2026-11-02,5.4,0.511,True,0.6,5,41.0,0.11,-0.609,"core ~10%, SAMR overhang"
+0700.HK,Tencent,hk_tech,4643,2008-01-02,2026-11-02,18.4,0.377,True,0.89,9,29.7,39.11,-0.728,-75% 2021-22 then recovery
+1024.HK,Kuaishou,hk_tech,1409,2021-02-05,2026-11-02,5.6,0.615,True,0.0,1,57.6,-0.91,-0.935,block trade + core deceleration
+PDD,PDD Holdings,hk_tech,2078,2018-07-26,2026-10-30,8.2,0.671,False,0.83,6,57.8,1.94,-0.874,net cash ~56% of mcap
+1299.HK,AIA Group,hk_other,3943,2010-10-29,2026-11-02,15.6,0.285,True,0.8,5,18.1,3.26,-0.554,cash-fortress screen top pick
+9987.HK,Yum China,hk_other,1509,2020-09-10,2026-11-02,6.0,0.38,True,0.0,1,25.0,-0.05,-0.573,mechanical buyback compounder
+0921.HK,Hisense Home Appliances,hk_other,4643,2008-01-02,2026-11-02,18.4,0.53,True,0.69,13,42.6,31.91,-0.823,"52/100 v5.9, re-rating bet"
+1361.HK,361 Degrees,hk_other,4276,2009-06-30,2026-11-02,17.0,0.422,True,0.6,5,33.6,1.55,-0.814,net cash ~60% of mcap
+0696.HK,TravelSky,cash_fort,4643,2008-01-02,2026-11-02,18.4,0.42,True,0.67,6,31.5,1.62,-0.791,"net cash ~58%, held"
+1896.HK,Maoyan,cash_fort,1904,2019-02-04,2026-11-02,7.6,0.524,True,0.5,2,48.6,-0.74,-0.794,"net cash ~53%, 20% payout"
+2192.HK,Medlive,cash_fort,1303,2021-07-15,2026-11-02,5.2,0.642,True,0.0,1,58.6,-0.77,-0.873,net cash ~73%
+0811.HK,Xinhua Winshare,cash_fort,4643,2008-01-02,2026-11-02,18.4,0.321,True,0.57,7,20.4,4.53,-0.788,"~6.8% yield, PRC withholding"
+6049.HK,Poly Property,cash_fort,1688,2019-12-19,2026-11-02,6.7,0.464,True,0.5,2,37.5,-0.31,-0.727,escrow/legal cash unverified
+V,Visa,us_comp,4685,2008-03-19,2026-10-30,18.6,0.282,True,1.0,5,16.8,32.37,-0.519,bought with CNOOC proceeds
+NVO,Novo Nordisk,us_comp,4738,2008-01-02,2026-10-30,18.8,0.313,True,0.89,9,21.0,8.34,-0.747,rotation target

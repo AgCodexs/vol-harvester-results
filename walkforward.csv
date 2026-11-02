@@ -17,24 +17,6 @@ USO,WTI oil (ETF),commodity,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first
 USO,WTI oil (ETF),commodity,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.197,-0.021,-0.176,-0.197,0.057,False,2012-09-14..2017-05-26,2017-06-02..2022-02-11
 USO,WTI oil (ETF),commodity,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.19,1.247,-1.057,0.057,0.806,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
 USO,WTI oil (ETF),commodity,2,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.021,0.755,-0.776,0.057,0.806,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-0883.HK,CNOOC,soe,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.336,0.111,0.225,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-0883.HK,CNOOC,soe,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.17,-0.014,0.184,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-0883.HK,CNOOC,soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.111,0.731,-0.621,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-0883.HK,CNOOC,soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.014,0.47,-0.484,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-0883.HK,CNOOC,soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.731,2.091,-1.36,0.3,1.325,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-0883.HK,CNOOC,soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.47,1.325,-0.855,0.3,1.325,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-0939.HK,China Construction Bank,soe,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.256,0.763,-0.507,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-0939.HK,China Construction Bank,soe,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.156,0.422,-0.266,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-0939.HK,China Construction Bank,soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.824,1.061,-0.237,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-0939.HK,China Construction Bank,soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.422,0.408,0.013,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-0939.HK,China Construction Bank,soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.061,1.393,-0.332,0.37,1.209,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-0939.HK,China Construction Bank,soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.408,1.011,-0.602,0.37,1.209,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-BBRI.JK,Bank Rakyat Indonesia,idx,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",0.366,1.149,-0.783,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
-BBRI.JK,Bank Rakyat Indonesia,idx,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.281,0.911,-0.63,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
-BBRI.JK,Bank Rakyat Indonesia,idx,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.383,0.796,0.587,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
-BBRI.JK,Bank Rakyat Indonesia,idx,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.911,0.426,0.485,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
-BBRI.JK,Bank Rakyat Indonesia,idx,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.796,0.54,0.256,0.391,0.075,True,2017-06-09..2022-02-04,2022-02-11..2026-10-30
-BBRI.JK,Bank Rakyat Indonesia,idx,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.426,0.057,0.369,0.391,0.075,False,2017-06-09..2022-02-04,2022-02-11..2026-10-30
 BTC-USD,Bitcoin,crypto,0,grid,"grid[anchor=0.5,exit_mult=8.0,p0_mode=first,p0_error=0.25]",1.211,0.904,0.307,2.226,0.621,True,2014-09-19..2017-09-22,2017-09-29..2020-10-09
 BTC-USD,Bitcoin,crypto,0,harvester,"harvester[window=252,max_range_ratio=0.85]",2.11,0.671,1.439,2.226,0.621,True,2014-09-19..2017-09-22,2017-09-29..2020-10-09
 BTC-USD,Bitcoin,crypto,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.553,3.507,-1.954,0.621,0.606,True,2017-09-29..2020-10-09,2020-10-16..2023-10-20
@@ -53,15 +35,141 @@ RAY-USD,Raydium,crypto,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_e
 RAY-USD,Raydium,crypto,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.829,0.975,-0.146,0.829,0.975,False,2022-07-29..2023-12-29,2024-01-05..2025-05-30
 RAY-USD,Raydium,crypto,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",3.675,0.592,3.083,0.975,0.142,True,2024-01-05..2025-05-30,2025-06-06..2026-11-06
 RAY-USD,Raydium,crypto,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.975,0.142,0.833,0.975,0.142,False,2024-01-05..2025-05-30,2025-06-06..2026-11-06
-2382.HK,Sunny Optical,high_bounce,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.207,2.71,-2.503,0.197,1.642,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-2382.HK,Sunny Optical,high_bounce,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.234,1.415,-1.182,0.197,1.642,False,2008-01-04..2012-09-07,2012-09-14..2017-05-26
-2382.HK,Sunny Optical,high_bounce,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.71,1.272,1.438,1.642,0.533,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-2382.HK,Sunny Optical,high_bounce,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.449,0.551,0.898,1.642,0.533,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
-2382.HK,Sunny Optical,high_bounce,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.272,-0.003,1.275,0.533,-0.113,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-2382.HK,Sunny Optical,high_bounce,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.551,-0.094,0.645,0.533,-0.113,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
-6862.HK,Haidilao,high_bounce,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",5.747,-0.283,6.03,3.236,-0.375,True,2018-09-28..2020-09-25,2020-10-02..2022-10-07
-6862.HK,Haidilao,high_bounce,0,harvester,"harvester[window=252,max_range_ratio=0.85]",3.236,-0.375,3.611,3.236,-0.375,False,2018-09-28..2020-09-25,2020-10-02..2022-10-07
-6862.HK,Haidilao,high_bounce,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.283,1.238,-1.521,-0.375,0.427,True,2020-10-02..2022-10-07,2022-10-14..2024-10-18
-6862.HK,Haidilao,high_bounce,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.375,0.427,-0.802,-0.375,0.427,False,2020-10-02..2022-10-07,2022-10-14..2024-10-18
-6862.HK,Haidilao,high_bounce,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.254,-0.06,1.313,0.427,-0.268,True,2022-10-14..2024-10-18,2024-10-25..2026-10-30
-6862.HK,Haidilao,high_bounce,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.427,-0.268,0.695,0.427,-0.268,False,2022-10-14..2024-10-18,2024-10-25..2026-10-30
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",0.366,1.149,-0.783,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.281,0.911,-0.63,0.344,0.711,True,2008-01-04..2012-09-07,2012-09-14..2017-06-02
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.383,0.796,0.587,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.911,0.426,0.485,0.711,0.391,True,2012-09-14..2017-06-02,2017-06-09..2022-02-04
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.796,0.54,0.256,0.391,0.075,True,2017-06-09..2022-02-04,2022-02-11..2026-10-30
+BBRI.JK,Bank Rakyat Indonesia,idx_bank,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.426,0.057,0.369,0.391,0.075,False,2017-06-09..2022-02-04,2022-02-11..2026-10-30
+BMRI.JK,Bank Mandiri,idx_bank,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.543,0.809,-0.266,0.535,0.476,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+BMRI.JK,Bank Mandiri,idx_bank,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.499,0.615,-0.116,0.535,0.476,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+BMRI.JK,Bank Mandiri,idx_bank,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.829,0.556,0.273,0.476,0.298,True,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+BMRI.JK,Bank Mandiri,idx_bank,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.615,0.25,0.365,0.476,0.298,False,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+BMRI.JK,Bank Mandiri,idx_bank,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.556,1.298,-0.742,0.298,0.309,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+BMRI.JK,Bank Mandiri,idx_bank,2,harvester,"harvester[window=504,max_range_ratio=0.85]",0.278,0.756,-0.477,0.298,0.309,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+BBCA.JK,Bank Central Asia,idx_bank,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.892,2.195,-1.303,0.791,1.083,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+BBCA.JK,Bank Central Asia,idx_bank,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.656,1.189,-0.534,0.791,1.083,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+BBCA.JK,Bank Central Asia,idx_bank,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.208,2.005,0.203,1.083,0.741,True,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+BBCA.JK,Bank Central Asia,idx_bank,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.189,0.697,0.492,1.083,0.741,False,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+BBCA.JK,Bank Central Asia,idx_bank,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.005,0.214,1.791,0.741,-0.032,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+BBCA.JK,Bank Central Asia,idx_bank,2,harvester,"harvester[window=252,max_range_ratio=1.25]",1.547,-0.047,1.594,0.741,-0.032,False,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+LSIP.JK,London Sumatra,idx_other,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.229,0.194,0.035,0.182,-0.014,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+LSIP.JK,London Sumatra,idx_other,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.173,0.062,0.111,0.182,-0.014,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+LSIP.JK,London Sumatra,idx_other,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.208,0.313,-0.106,-0.014,0.148,True,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+LSIP.JK,London Sumatra,idx_other,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.062,0.166,-0.104,-0.014,0.148,True,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+LSIP.JK,London Sumatra,idx_other,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.325,0.598,-0.273,0.148,0.321,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+LSIP.JK,London Sumatra,idx_other,2,harvester,"harvester[window=504,max_range_ratio=0.85]",0.174,0.421,-0.247,0.148,0.321,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+INCO.JK,Vale Indonesia,idx_other,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.004,0.257,-0.253,-0.078,0.008,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+INCO.JK,Vale Indonesia,idx_other,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.068,0.053,-0.121,-0.078,0.008,True,2008-01-04..2012-09-14,2012-09-21..2017-06-09
+INCO.JK,Vale Indonesia,idx_other,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.268,0.868,-0.6,0.008,0.427,True,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+INCO.JK,Vale Indonesia,idx_other,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.053,0.343,-0.29,0.008,0.427,False,2012-09-21..2017-06-09,2017-06-16..2022-02-11
+INCO.JK,Vale Indonesia,idx_other,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.868,0.226,0.642,0.427,0.036,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+INCO.JK,Vale Indonesia,idx_other,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.343,0.085,0.258,0.427,0.036,True,2017-06-16..2022-02-11,2022-02-18..2026-11-06
+0939.HK,China Construction Bank,cn_soe,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.256,0.763,-0.507,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0939.HK,China Construction Bank,cn_soe,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.156,0.422,-0.266,0.115,0.337,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0939.HK,China Construction Bank,cn_soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.824,1.061,-0.237,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0939.HK,China Construction Bank,cn_soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.422,0.408,0.013,0.337,0.37,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0939.HK,China Construction Bank,cn_soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.061,1.393,-0.332,0.37,1.209,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0939.HK,China Construction Bank,cn_soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.408,1.011,-0.602,0.37,1.209,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+1398.HK,ICBC,cn_soe,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.385,0.783,-0.398,0.139,0.32,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+1398.HK,ICBC,cn_soe,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.263,0.373,-0.11,0.139,0.32,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+1398.HK,ICBC,cn_soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.783,0.931,-0.148,0.32,0.293,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+1398.HK,ICBC,cn_soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.373,0.336,0.036,0.32,0.293,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+1398.HK,ICBC,cn_soe,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.977,1.484,-0.507,0.293,1.255,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+1398.HK,ICBC,cn_soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.336,1.066,-0.73,0.293,1.255,False,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+0883.HK,CNOOC,cn_soe,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.336,0.111,0.225,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0883.HK,CNOOC,cn_soe,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.17,-0.014,0.184,0.163,-0.025,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+0883.HK,CNOOC,cn_soe,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.111,0.731,-0.621,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0883.HK,CNOOC,cn_soe,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.014,0.47,-0.484,-0.025,0.3,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+0883.HK,CNOOC,cn_soe,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.731,2.091,-1.36,0.3,1.325,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+0883.HK,CNOOC,cn_soe,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.47,1.325,-0.855,0.3,1.325,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+9961.HK,Trip.com,hk_tech,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.027,2.007,-1.98,-0.343,1.455,True,2021-04-23..2022-09-02,2022-09-09..2024-01-26
+9961.HK,Trip.com,hk_tech,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.343,1.455,-1.798,-0.343,1.455,False,2021-04-23..2022-09-02,2022-09-09..2024-01-26
+9961.HK,Trip.com,hk_tech,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.036,3.218,-1.183,1.455,1.489,True,2022-09-09..2024-01-26,2024-02-02..2025-06-13
+9961.HK,Trip.com,hk_tech,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.455,1.489,-0.035,1.455,1.489,False,2022-09-09..2024-01-26,2024-02-02..2025-06-13
+9961.HK,Trip.com,hk_tech,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",3.218,-0.193,3.411,1.489,-0.321,True,2024-02-02..2025-06-13,2025-06-20..2026-11-06
+9961.HK,Trip.com,hk_tech,2,harvester,"harvester[window=252,max_range_ratio=0.85]",1.489,-0.321,1.81,1.489,-0.321,False,2024-02-02..2025-06-13,2025-06-20..2026-11-06
+0700.HK,Tencent,hk_tech,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",1.036,1.917,-0.881,0.927,1.817,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0700.HK,Tencent,hk_tech,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.964,1.817,-0.853,0.927,1.817,False,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0700.HK,Tencent,hk_tech,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=0.0]",2.079,0.716,1.363,1.817,0.408,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0700.HK,Tencent,hk_tech,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.817,0.284,1.533,1.817,0.408,False,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0700.HK,Tencent,hk_tech,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.88,0.275,0.605,0.408,0.138,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+0700.HK,Tencent,hk_tech,2,harvester,"harvester[window=252,max_range_ratio=1.25]",0.345,0.144,0.2,0.408,0.138,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+1024.HK,Kuaishou,hk_tech,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.382,0.176,-0.559,-0.508,-0.144,True,2021-02-05..2022-07-08,2022-07-15..2023-12-15
+1024.HK,Kuaishou,hk_tech,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.508,-0.144,-0.364,-0.508,-0.144,False,2021-02-05..2022-07-08,2022-07-15..2023-12-15
+1024.HK,Kuaishou,hk_tech,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.185,0.819,-0.634,-0.144,0.186,True,2022-07-15..2023-12-15,2023-12-22..2025-05-23
+1024.HK,Kuaishou,hk_tech,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.144,0.186,-0.33,-0.144,0.186,False,2022-07-15..2023-12-15,2023-12-22..2025-05-23
+1024.HK,Kuaishou,hk_tech,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.829,-0.341,1.17,0.186,-0.367,True,2023-12-22..2025-05-23,2025-05-30..2026-11-06
+1024.HK,Kuaishou,hk_tech,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.186,-0.367,0.553,0.186,-0.367,False,2023-12-22..2025-05-23,2025-05-30..2026-11-06
+PDD,PDD Holdings,hk_tech,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=0.0]",2.27,0.376,1.894,2.44,0.091,True,2018-07-27..2020-08-14,2020-08-21..2022-09-09
+PDD,PDD Holdings,hk_tech,0,harvester,"harvester[window=252,max_range_ratio=0.85]",2.44,0.091,2.349,2.44,0.091,False,2018-07-27..2020-08-14,2020-08-21..2022-09-09
+PDD,PDD Holdings,hk_tech,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.42,2.62,-2.2,0.091,1.364,True,2020-08-21..2022-09-09,2022-09-16..2024-10-04
+PDD,PDD Holdings,hk_tech,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.091,1.364,-1.273,0.091,1.364,False,2020-08-21..2022-09-09,2022-09-16..2024-10-04
+PDD,PDD Holdings,hk_tech,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.62,-0.231,2.851,1.364,-0.426,True,2022-09-16..2024-10-04,2024-10-11..2026-10-30
+PDD,PDD Holdings,hk_tech,2,harvester,"harvester[window=252,max_range_ratio=0.85]",1.364,-0.426,1.79,1.364,-0.426,False,2022-09-16..2024-10-04,2024-10-11..2026-10-30
+1299.HK,AIA Group,hk_other,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.512,1.146,0.366,0.916,0.533,True,2010-10-29..2014-10-24,2014-10-31..2018-10-26
+1299.HK,AIA Group,hk_other,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.801,0.46,0.341,0.916,0.533,False,2010-10-29..2014-10-24,2014-10-31..2018-10-26
+1299.HK,AIA Group,hk_other,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.146,0.63,0.516,0.533,0.122,True,2014-10-31..2018-10-26,2018-11-02..2022-10-28
+1299.HK,AIA Group,hk_other,1,harvester,"harvester[window=252,max_range_ratio=1.0]",0.46,0.149,0.312,0.533,0.122,True,2014-10-31..2018-10-26,2018-11-02..2022-10-28
+1299.HK,AIA Group,hk_other,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.63,0.655,-0.024,0.122,0.264,True,2018-11-02..2022-10-28,2022-11-04..2026-11-06
+1299.HK,AIA Group,hk_other,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.149,0.367,-0.218,0.122,0.264,True,2018-11-02..2022-10-28,2022-11-04..2026-11-06
+9987.HK,Yum China,hk_other,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.268,1.995,-1.728,-0.094,0.931,True,2020-09-11..2022-03-18,2022-03-25..2023-10-06
+9987.HK,Yum China,hk_other,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.094,0.931,-1.025,-0.094,0.931,False,2020-09-11..2022-03-18,2022-03-25..2023-10-06
+9987.HK,Yum China,hk_other,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.995,0.22,1.776,0.931,-0.116,True,2022-03-25..2023-10-06,2023-10-13..2025-04-18
+9987.HK,Yum China,hk_other,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.931,-0.116,1.047,0.931,-0.116,False,2022-03-25..2023-10-06,2023-10-13..2025-04-18
+9987.HK,Yum China,hk_other,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.22,0.813,-0.593,-0.116,0.212,True,2023-10-13..2025-04-18,2025-04-25..2026-11-06
+9987.HK,Yum China,hk_other,2,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.116,0.212,-0.328,-0.116,0.212,False,2023-10-13..2025-04-18,2025-04-25..2026-11-06
+0921.HK,Hisense Home Appliances,hk_other,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.223,3.101,-1.878,0.292,0.652,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0921.HK,Hisense Home Appliances,hk_other,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.299,0.652,-0.353,0.292,0.652,False,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0921.HK,Hisense Home Appliances,hk_other,1,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",3.336,0.465,2.871,0.652,0.137,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0921.HK,Hisense Home Appliances,hk_other,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.652,0.298,0.354,0.652,0.137,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0921.HK,Hisense Home Appliances,hk_other,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.468,1.012,-0.544,0.137,0.674,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+0921.HK,Hisense Home Appliances,hk_other,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.298,0.674,-0.376,0.137,0.674,False,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+1361.HK,361 Degrees,hk_other,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.196,1.104,-0.908,0.01,0.432,True,2009-07-03..2013-10-25,2013-11-01..2018-03-02
+1361.HK,361 Degrees,hk_other,0,harvester,"harvester[window=252,max_range_ratio=1.0]",-0.064,0.591,-0.656,0.01,0.432,True,2009-07-03..2013-10-25,2013-11-01..2018-03-02
+1361.HK,361 Degrees,hk_other,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.104,0.446,0.658,0.432,0.321,True,2013-11-01..2018-03-02,2018-03-09..2022-07-01
+1361.HK,361 Degrees,hk_other,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.591,0.244,0.347,0.432,0.321,False,2013-11-01..2018-03-02,2018-03-09..2022-07-01
+1361.HK,361 Degrees,hk_other,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.447,0.777,-0.33,0.321,0.355,True,2018-03-09..2022-07-01,2022-07-08..2026-11-06
+1361.HK,361 Degrees,hk_other,2,harvester,"harvester[window=252,max_range_ratio=1.0]",0.298,0.432,-0.134,0.321,0.355,True,2018-03-09..2022-07-01,2022-07-08..2026-11-06
+0696.HK,TravelSky,cash_fort,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.185,2.617,-2.432,0.078,1.134,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0696.HK,TravelSky,cash_fort,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.108,0.912,-0.804,0.078,1.134,False,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0696.HK,TravelSky,cash_fort,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.743,0.179,2.563,1.134,-0.034,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0696.HK,TravelSky,cash_fort,1,harvester,"harvester[window=504,max_range_ratio=0.85]",1.195,0.057,1.138,1.134,-0.034,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0696.HK,TravelSky,cash_fort,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.181,0.293,-0.112,-0.034,0.024,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+0696.HK,TravelSky,cash_fort,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.057,0.12,-0.063,-0.034,0.024,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+1896.HK,Maoyan,cash_fort,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.674,0.133,0.54,0.066,-0.132,True,2019-02-08..2021-01-08,2021-01-15..2022-12-16
+1896.HK,Maoyan,cash_fort,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.066,-0.132,0.199,0.066,-0.132,False,2019-02-08..2021-01-08,2021-01-15..2022-12-16
+1896.HK,Maoyan,cash_fort,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.133,0.606,-0.473,-0.132,0.134,True,2021-01-15..2022-12-16,2022-12-23..2024-11-22
+1896.HK,Maoyan,cash_fort,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.132,0.134,-0.266,-0.132,0.134,False,2021-01-15..2022-12-16,2022-12-23..2024-11-22
+1896.HK,Maoyan,cash_fort,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.606,-0.423,1.03,0.134,-0.477,True,2022-12-23..2024-11-22,2024-11-29..2026-11-06
+1896.HK,Maoyan,cash_fort,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.134,-0.477,0.61,0.134,-0.477,False,2022-12-23..2024-11-22,2024-11-29..2026-11-06
+2192.HK,Medlive,cash_fort,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",-0.52,0.321,-0.841,-0.585,-0.094,True,2021-07-16..2022-11-04,2022-11-11..2024-03-08
+2192.HK,Medlive,cash_fort,0,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.585,-0.094,-0.491,-0.585,-0.094,False,2021-07-16..2022-11-04,2022-11-11..2024-03-08
+2192.HK,Medlive,cash_fort,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.386,3.721,-3.335,-0.094,2.797,True,2022-11-11..2024-03-08,2024-03-15..2025-07-04
+2192.HK,Medlive,cash_fort,1,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.094,2.797,-2.891,-0.094,2.797,False,2022-11-11..2024-03-08,2024-03-15..2025-07-04
+2192.HK,Medlive,cash_fort,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=0.0]",3.817,-0.679,4.496,2.797,-0.686,True,2024-03-15..2025-07-04,2025-07-11..2026-11-06
+2192.HK,Medlive,cash_fort,2,harvester,"harvester[window=252,max_range_ratio=0.85]",2.797,-0.686,3.483,2.797,-0.686,False,2024-03-15..2025-07-04,2025-07-11..2026-11-06
+0811.HK,Xinhua Winshare,cash_fort,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.202,2.318,-2.116,0.109,0.503,True,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0811.HK,Xinhua Winshare,cash_fort,0,harvester,"harvester[window=252,max_range_ratio=1.0]",0.13,0.423,-0.293,0.109,0.503,False,2008-01-04..2012-09-14,2012-09-21..2017-06-02
+0811.HK,Xinhua Winshare,cash_fort,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",2.318,0.702,1.617,0.503,0.338,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0811.HK,Xinhua Winshare,cash_fort,1,harvester,"harvester[window=252,max_range_ratio=1.25]",0.777,0.49,0.287,0.503,0.338,True,2012-09-21..2017-06-02,2017-06-09..2022-02-18
+0811.HK,Xinhua Winshare,cash_fort,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.793,2.097,-1.305,0.338,0.767,True,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+0811.HK,Xinhua Winshare,cash_fort,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.49,0.767,-0.277,0.338,0.767,False,2017-06-09..2022-02-18,2022-02-25..2026-11-06
+6049.HK,Poly Property,cash_fort,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",1.368,0.534,0.834,0.291,0.057,True,2019-12-20..2021-09-03,2021-09-10..2023-05-26
+6049.HK,Poly Property,cash_fort,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.291,0.057,0.234,0.291,0.057,False,2019-12-20..2021-09-03,2021-09-10..2023-05-26
+6049.HK,Poly Property,cash_fort,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.534,0.135,0.399,0.057,-0.111,True,2021-09-10..2023-05-26,2023-06-02..2025-02-14
+6049.HK,Poly Property,cash_fort,1,harvester,"harvester[window=252,max_range_ratio=0.85]",0.057,-0.111,0.167,0.057,-0.111,False,2021-09-10..2023-05-26,2023-06-02..2025-02-14
+6049.HK,Poly Property,cash_fort,2,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.135,0.991,-0.855,-0.111,0.226,True,2023-06-02..2025-02-14,2025-02-21..2026-11-06
+6049.HK,Poly Property,cash_fort,2,harvester,"harvester[window=252,max_range_ratio=0.85]",-0.111,0.226,-0.337,-0.111,0.226,False,2023-06-02..2025-02-14,2025-02-21..2026-11-06
+V,Visa,us_comp,0,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.653,3.714,-3.061,0.5,1.959,True,2008-03-21..2012-11-09,2012-11-16..2017-07-07
+V,Visa,us_comp,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.417,1.959,-1.542,0.5,1.959,False,2008-03-21..2012-11-09,2012-11-16..2017-07-07
+V,Visa,us_comp,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",3.714,2.134,1.58,1.959,0.773,True,2012-11-16..2017-07-07,2017-07-14..2022-03-04
+V,Visa,us_comp,1,harvester,"harvester[window=252,max_range_ratio=0.85]",1.959,0.773,1.186,1.959,0.773,False,2012-11-16..2017-07-07,2017-07-14..2022-03-04
+V,Visa,us_comp,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",2.263,1.587,0.677,0.773,1.067,True,2017-07-14..2022-03-04,2022-03-11..2026-10-30
+V,Visa,us_comp,2,harvester,"harvester[window=504,max_range_ratio=1.0]",1.48,0.788,0.692,0.773,1.067,False,2017-07-14..2022-03-04,2022-03-11..2026-10-30
+NVO,Novo Nordisk,us_comp,0,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",0.824,0.759,0.065,0.764,0.313,True,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+NVO,Novo Nordisk,us_comp,0,harvester,"harvester[window=252,max_range_ratio=0.85]",0.63,0.232,0.399,0.764,0.313,False,2008-01-04..2012-09-07,2012-09-14..2017-05-26
+NVO,Novo Nordisk,us_comp,1,grid,"grid[anchor=0.35,exit_mult=6.0,p0_mode=first,p0_error=-0.25]",0.83,1.656,-0.826,0.313,1.102,True,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+NVO,Novo Nordisk,us_comp,1,harvester,"harvester[window=252,max_range_ratio=1.0]",0.454,0.842,-0.389,0.313,1.102,False,2012-09-14..2017-05-26,2017-06-02..2022-02-11
+NVO,Novo Nordisk,us_comp,2,grid,"grid[anchor=0.35,exit_mult=8.0,p0_mode=first,p0_error=-0.25]",1.706,0.458,1.247,1.102,0.07,True,2017-06-02..2022-02-11,2022-02-18..2026-10-30
+NVO,Novo Nordisk,us_comp,2,harvester,"harvester[window=252,max_range_ratio=0.85]",0.994,0.056,0.939,1.102,0.07,False,2017-06-02..2022-02-11,2022-02-18..2026-10-30
