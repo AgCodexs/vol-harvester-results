@@ -1,0 +1,56 @@
+Building panel (adj)...
+/Users/agus/.openclaw/workspace-harvester/repo-scaffold/run_portfolio.py:78: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  panel = pd.concat(series, axis=1).dropna()
+  30 names, 275 weekly bars, 2021-07-16 -> 2026-11-06
+  panel start is bounded by the latest-listing names:
+    9987.HK      first data 2020-09-10
+    1024.HK      first data 2021-02-05
+    RAY-USD      first data 2021-02-21
+    9961.HK      first data 2021-04-19
+    2192.HK      first data 2021-07-15
+
+  relative weights sum to 82; rescaled to each anchor at run time
+
+SUMMARY ACROSS START DATES
+Read median_edge, worst_edge and frac_positive. PREFERRED requires median > 0 AND worst >= 0.
+architecture       rationing  anchor p0_mode  cap  starts  median_edge  worst_edge  frac_positive  median_cagr  median_dd  worst_dd  mean_dep  rationed  PREFERRED
+      pooled cheapest_capped    0.50   first 0.85       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled cheapest_capped    0.50   first 1.00       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled        pro_rata    0.50   first 1.00       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled        pro_rata    0.50   first 0.85       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled        cheapest    0.50   first 0.85       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled        cheapest    0.50   first 1.00       1         2.69        2.69            1.0        10.10       -8.8      -8.8      45.7         0       True
+      pooled        cheapest    0.35   first 0.85       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+      pooled        cheapest    0.35   first 1.00       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+      pooled        pro_rata    0.35   first 1.00       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+      pooled        pro_rata    0.35   first 0.85       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+      pooled cheapest_capped    0.35   first 0.85       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+      pooled cheapest_capped    0.35   first 1.00       1         2.68        2.68            1.0         8.82       -6.1      -6.1      31.3         0       True
+     sleeves cheapest_capped    0.35   first 0.85       1         1.79        1.79            1.0         7.81       -5.7      -5.7      29.6         0       True
+      pooled        pro_rata    0.50  review 0.85       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled cheapest_capped    0.50  review 1.00       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled cheapest_capped    0.50  review 0.85       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled        pro_rata    0.50  review 1.00       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled        cheapest    0.50  review 1.00       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled        cheapest    0.50  review 0.85       1         1.73        1.73            1.0         9.26       -9.1      -9.1      46.2         0       True
+      pooled cheapest_capped    0.35  review 1.00       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+      pooled        pro_rata    0.35  review 0.85       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+      pooled        pro_rata    0.35  review 1.00       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+      pooled        cheapest    0.35  review 1.00       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+      pooled        cheapest    0.35  review 0.85       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+      pooled cheapest_capped    0.35  review 0.85       1         1.49        1.49            1.0         7.63       -6.1      -6.1      31.2         0       True
+     sleeves cheapest_capped    0.50   first 0.85       1         1.23        1.23            1.0         8.68       -8.9      -8.9      43.0         0       True
+     sleeves cheapest_capped    0.35  review 0.85       1         0.94        0.94            1.0         6.89       -5.5      -5.5      30.2         0       True
+     sleeves cheapest_capped    0.50  review 0.85       1         0.28        0.28            1.0         8.12       -9.6      -9.6      44.5         0       True
+ constant_35               -    0.35       - 1.00       2         0.00        0.00            0.0         6.54       -7.3      -7.3      32.3         0      False
+ constant_50               -    0.50       - 1.00       2         0.00        0.00            0.0         8.54      -10.9     -10.9      48.8         0      False
+     buyhold               -    1.00       - 1.00       2         0.00        0.00            0.0         8.06      -25.2     -25.2     100.0         0      False
+
+rationed_bars (median) by rationing rule — if this is 0 the rule was never exercised and the comparison is void:
+rationing
+-                  0.0
+cheapest           0.0
+cheapest_capped    0.0
+pro_rata           0.0
+
+Wrote results/portfolio_raw.csv and results/portfolio_summary.csv
